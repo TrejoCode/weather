@@ -1,0 +1,18 @@
+/**
+ * @version 1.0.0
+ * @author Trejocode - Sergio
+ * @description SASS Base loader
+*/
+
+// Core styles
+@import "./core/trejocode";
+@import "./core/colors";
+@import "./core/fonts";
+@import "./core/spacings";
+
+// Components
+@import "./components/butons";
+@import "./components/input";
+
+// Pages
+@import "./pages/home";

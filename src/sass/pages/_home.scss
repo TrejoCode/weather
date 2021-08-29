@@ -1,0 +1,114 @@
+/**
+ * @description Home page styles
+ */
+
+ .home {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--primary-alt);
+
+	.wrapper {
+		width: 1024px;
+		max-width: 1024px;
+		border-radius: 1rem;
+		background-color: #ffffff;
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	}
+
+	aside {
+		width: 25%;
+		padding: 2rem;
+		border-radius: 1rem;
+		background-color: #ffffff;
+
+		.__search {
+			padding: 0.5rem;
+			border-radius: 0.5rem;
+			background-color: #fafafa;
+
+			@media screen and (max-width: 600px ){
+				top: 0;
+				left: 0;
+				display: flex;
+				position: fixed;
+				align-items: center;
+				justify-content: center;
+				width: calc(100% - 1rem);
+			}
+
+		}
+
+		.__image {
+			width: 128px;
+			height: 128px;
+			margin: 1.5rem 0;
+			align-items: center;
+			border-radius: 0.25rem;
+			justify-content: center;
+			background-color: #96b5e4;
+		}
+
+		.__location {
+			margin: 0.5rem 0 0.75rem 0;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: calc(100% - 4rem);
+		}
+
+	}
+	
+	@media screen and (max-width: 768px) {
+
+		nav { text-align: center; }
+		
+	}
+	
+	.__content {
+		width: 75%;
+		padding: 2rem;
+		border-radius: 1rem;
+		background-color: #fafafa;
+
+		.__cards__container {
+			min-height: 700px;
+		}
+
+		.__card {
+			padding: 1rem 2rem;
+			margin: 1rem 0.75rem;
+			border-radius: 0.5rem;
+			background-color: #ffffff;
+			border: 1px solid rgba(150, 181, 228, 0.2);
+			transition: border 250ms ease-in-out;
+
+			&:hover {
+				border: 1px solid rgba(150, 181, 228, 0.75);
+			}
+
+			.__day { margin-bottom: 1rem; }
+
+			.__image {
+				width: 92px;
+				height: 92px;
+				align-items: center;
+				border-radius: 0.25rem;
+				justify-content: center;
+				background-color: #96b5e4;
+			}
+
+			.__temperature { margin-top: 1rem; }
+
+			@media screen and (max-width: 768px) {
+				width: 50%;
+			}
+
+		}
+
+		@media screen and (max-width: 768px) {
+			width: calc(100% - 4rem);
+		}
+
+	}
+
+}
