@@ -5,7 +5,7 @@
  */
 
 import axios from "axios";
-const BASE_URL = "https://api.weatherstack.com";
+const BASE_URL = "http://api.weatherstack.com";
 
 /**
  * @description Request an HTTP GET
